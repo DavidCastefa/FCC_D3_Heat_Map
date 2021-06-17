@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FCC D3 Heat Map</title>
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <svg id="canvas">
+  </svg>
+
+  <svg id="legend">
+    <rect y="10" x="0" width="25" height ="15" fill="indigo"></rect>
+    <rect y="10" x="25" width="25" height ="15" fill="blue"></rect>
+    <rect y="10" x="50" width="25" height ="15" fill="green"></rect>
+    <rect y="10" x="75" width="25" height ="15" fill="yellow"></rect>
+    <rect y="10" x="100" width="25" height ="15" fill="orange"></rect>
+    <rect y="10" x="125" width="25" height ="15" fill="red"></rect>
+    <text y="40" x="16" fill="black">5,5</text>
+    <text y="40" x="45" fill="black">7</text>
+    <text y="40" x="67" fill="black">8,5</text>
+    <text y="40" x="93" fill="black">10</text>
+    <text y="40" x="115" fill="black">11,5&nbsp;&nbsp;&#176C</text>
+  </svg>
+
+  <div id="title-block">
+    <text id="title">Monthly Global Land Surface Temperature<br></text>
+    <text id="description">Year 1753 to 2015 (from base temperature of 8.66&#176C)</text>
+  </div>
+
+  <div id="data-source">
+    <span>Data from
+      <a href="https://raw.githubusercontent.com/freeCodeCamp/ProjectReferenceData/master/global-temperature.json">
+        https://raw.githubusercontent.com/freeCodeCamp/ProjectReferenceData/master/global-temperature.json
+      </a> 
+    </span>
+  </div>
+
+  <div id="signature">
+    <small><i>by David Rhoton, 2021</i></small>
+  </div>
+
+</body>
+
+<script defer src="script.js"></script>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>

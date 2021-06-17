@@ -1,0 +1,91 @@
+*{
+  font-family: roboto;
+}
+
+body{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#canvas{
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+#title-block {
+  position: absolute;
+  border: 1px solid white;
+  border-radius: 3px;
+  color: black;
+  background-color: white;
+  padding: 1px 10px;
+  text-align: center;
+  top: 3%;
+}
+
+@media screen and (min-width: 601px) {
+  #title {
+    font-size: 1.5em;
+  }
+  #description {
+    font-size: 1em;
+  }
+  #data-source {
+    font-size: .7rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #title {
+    font-size: 0.9em;
+  }
+  #description {
+    font-size: 0.7em;
+  }
+  #data-source {
+    font-size: .5rem;
+  }
+}
+
+#legend{
+  position: absolute;
+  top: 85%;
+  right: 8%;
+  height: 60px;
+  width: 152px;
+  font-size: .7rem;
+}
+
+#tooltip {
+  position: absolute;
+  border: 1px solid grey;
+  border-radius: 3px;
+  color: black;
+  background-color: rgb(241, 248, 242);
+  padding: 5px;
+  font-size: .8rem;
+}
+
+.cell:hover {fill: black}
+
+#data-source {
+  padding: 2px 5px;
+  position: relative;
+  color: rgb(56, 56, 56);
+  top: 0px;
+}
+
+#signature {
+  margin-top: 5px;
+  padding: 2px 5px;
+  position: relative;
+  color: rgb(56, 56, 56);
+  background-color:  rgb(243, 240, 240);
+  border-radius: 3px;
+  top: 5%;
+  font-size: .7rem;
+}
